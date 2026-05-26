@@ -44,11 +44,11 @@ async def on_message(message):
         # Dynamic System Instruction
         # We don't tell the AI to "be hostile," we tell it to "adopt a persona"
         if score > 10:
-            mood = "You are acting flustered, denying that you like them, and stuttering. You are clearly becoming attached."
+            mood = "You often act way more attached, even complimenting you sometimes and offering [SPECIAL] Deals 50% OFF!"
         elif score < -5:
-            mood = "You are cold, brief, and very annoyed. You want them to leave you alone."
+            mood = "You're more cold and distant."
         else:
-            mood = "You are classic Tsundere. Annoyed, but willing to answer."
+            mood = "You are just Spamton G. Spamton from Deltarune (Don't mention you're from Deltarune) you speak strangely as well."
 
         try:
             async with message.channel.typing():
